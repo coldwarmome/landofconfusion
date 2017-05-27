@@ -1,0 +1,61 @@
+@font-face {
+	font-family: HelveticaNeue;
+	src: url('../assets/HelveticaNeue-Thin.ttf');
+}
+
+body {
+	background: white;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    font-size: 1.4em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+li {
+    line-height: 1.45em;
+}
+
+span {
+    font-weight: 400;
+}
+
+.arrow-back {
+	width: 60px;
+	height: 45px;
+	z-index: 100;
+	color:black;
+}
+
+.arrow-back a {
+	color: black;
+    height: inherit;
+}
+
+.arrow-back a:hover {
+	cursor: pointer;
+}

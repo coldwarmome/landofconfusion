@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Land of Confusion</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <main>
+    <section class="intro">
+		<ul>
+			<li data-img="1" data-type="gif"><a href="#">1945-1947 Eve of Destruction</a></li>
+			<li data-img="2" data-type="jpg"><a href="#">1947-1953 Two Tribes</a></li>
+			<li data-img="3" data-type="gif"><a href="#">1953-1962 It’s a Mistake</a></li>
+			<li data-img="4" data-type="jpg"><a href="#">1962-1968 Back in the USSR</a></li>
+			<li data-img="5" data-type="gif"><a href="#">1968-1979 Silent Running</a></li>
+			<li data-img="6" data-type="jpg"><a class="initVideo" href="#">1979-1991 Land of Confusion</a></li>
+		</ul>
+    </section>
+    <section class="scene">
+      <section class="main-scene" id="container">
+          <video class="js-video-main" id="videoMain" muted>
+            <source src="assets/videos/ussr.mp4" type="video/mp4" />
+          </video>
+					<video class="js-video-under">
+						<source src="assets/videos/usa.mp4" type="video/mp4" />
+					</video>
+      </section>
+    </section>
+		<section class="bar-wrapper hidden">
+      <div class="knowledge">
+        <img src="assets/arrows_white.svg"/>
+      </div>
+      <div class="bar-over js-bar-over">
+				<div class="bar">
+				</div>
+			</div>
+			<div class="bar-under js-bar-under">
+				<div class="bar">
+				</div>
+			</div>
+		</section>
+  </main>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

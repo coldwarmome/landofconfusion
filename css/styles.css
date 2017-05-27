@@ -1,0 +1,206 @@
+@font-face {
+	font-family: HelveticaNeue;
+	src: url('../assets/HelveticaNeue-Thin.ttf');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: black;
+	font-size: 16px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+}
+
+.navitgation-arrow:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.intro {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+}
+
+.intro:before {
+	content: '';
+	height: 100%;
+}
+
+.intro:before, ul{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.intro ul {
+	list-style: none;
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 5.5vw;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.scene {
+	position: absolute;
+	display: none;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 40;
+}
+
+.main-scene {
+	position: relative;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.main-scene video:hover {
+	cursor: pointer;
+}
+
+.main-scene > video {
+	display: inline-block;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left:0;
+	z-index: 10;
+	max-height: 700px;
+}
+
+.clipper {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.clipper video {
+	width: 200%;
+	position: absolute;
+}
+
+.title {
+	position: absolute;
+	top: 70px;
+	color: white;
+	text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 180px;
+	opacity: 1;
+	z-index: 30;
+	letter-spacing: 10px;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+.bar-wrapper {
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.bar-over::before{
+	display: block;
+	content: ' ';
+	margin-top: 15px;
+}
+
+.bar-over,
+.bar-under {
+	width: 1640px;
+	margin: 10px auto 0 auto;
+	height: 2px;
+	background: black;
+}
+
+.bar::before {
+		display: block;
+		clear: both;
+		content: ' ';
+}
+
+.bar{
+		height: 4px;
+		width: 100%;
+		margin: 2px auto 0 auto;
+		display: block;
+		position: relative;
+	}
+
+.bar-over .bar {
+	background: rgba(107, 28, 18, 0.57);
+}
+
+.bar-under .bar {
+	background: rgba(43, 172, 185, 0.52);
+}
+
+.bar-segment {
+	height: 4px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.bar-over .bar-segment {
+	background: rgb(107, 28, 18);
+}
+
+.bar-under .bar-segment {
+	background: rgb(43, 172, 185);
+}
+
+.knowledge {
+	position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -40px;
+    display: block;
+}
+
+.knowledge img {
+	min-width: 80px;	
+}
+
+@media (min-width: 1650px) {
+	.main-scene{
+		width: 1650px;
+		margin: 0 auto;
+		display: block;
+	}
+}
