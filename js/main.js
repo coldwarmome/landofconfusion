@@ -83,7 +83,8 @@ $(document).ready( () => {
 
 			function drawBufferBar() {
 				const top = whatIsTop();
-				const ww = $('.bar').outerWidth();
+				const ww = $('.bar-wrapper').outerWidth();
+				console.log(ww);
 				const d =  ww / videoLength;
 				var elem = $('<div class=""></div>')
 						.addClass('bar-segment')
